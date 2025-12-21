@@ -27,5 +27,4 @@ function countdown(date, id) {
         }
     }, 1);
 };
-countdown("Nov 10, 2025 08:00:00", "ProgressReport");
-countdown("Nov 10, 2025 13:00:00", "SIL");
+countdown("Dec 22, 2025 12:35:00", "fl")

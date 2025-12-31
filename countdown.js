@@ -19,14 +19,14 @@ function countdown(date, id) {
             hours + "h " +
             minutes + "m " +
             seconds + "s "
-        
-        if (checkbox.checked == true) {
-            element.innerHTML += milliseconds + "ms"
-        }
-
-        if (timeLeft < 0) {
-            clearInterval(x)
-            element.style.display = "none"
+            
+            if (checkbox.checked == true) {
+                element.innerHTML += milliseconds + "ms"
+            }
+            
+            if (timeLeft < 0) {
+                clearInterval(x)
+                document.getElementById(id).textContent="HAPPY NEW YEAR!"
             for (let i = 0; i < 100; i++) {
                 const x = (Math.random() - 0.5) * window.innerWidth
                 const y = (Math.random() - 0.5) * window.innerHeight
@@ -55,7 +55,7 @@ function countdown(date, id) {
                 })
             })
         }
-    }, 16.666666666667)
+    }, 16.67)
 }
-countdown("Jan 1, 2026 00:00:00", "2026")
-// countdown("Dec 31, 2025 16:16:16", "2026")
+// countdown("Jan 1, 2026 00:00:00", "2026")
+countdown("Dec 31, 2025 16:16:16", "2026")

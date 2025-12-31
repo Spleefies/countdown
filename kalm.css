@@ -3,6 +3,7 @@ body {
   color: light-dark(#000,#fff);
   font: clamp(0em,6vw,2rem) Consolas, monospace;
   text-align: center;
+  overflow: hidden;
 }
 :root{color-scheme: light dark}
 table, tr, td{
@@ -28,4 +29,13 @@ a{
 input[type="checkbox"]{
   width: 3vw;
   height: 3vw; 
+}
+#confetti div {
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: all 0.4s;
+  transform: translate(0, 0)
 }

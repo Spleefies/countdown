@@ -57,5 +57,5 @@ function countdown(date, id) {
         }
     }, 16.67)
 }
-// countdown("Jan 1, 2026 00:00:00", "2026")
-countdown("Dec 31, 2025 16:16:16", "2026")
+countdown("Jan 1, 2026 00:00:00", "2026")
+// countdown("Dec 31, 2025 16:16:16", "2026")

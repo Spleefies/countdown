@@ -1,5 +1,4 @@
 const checkbox = document.querySelector("input")
-const confetti = document.getElementById("confetti")
 function countdown(date, id) {
     const element = document.getElementById(id)
     const targetDate = new Date(date).getTime()
@@ -31,3 +30,4 @@ function countdown(date, id) {
     }, 16.67)
 }
 countdown("Jan 21, 2026 09:15:00", "bio-enzyme-quiz")
+countdown("Mar 5, 2026 08:00:00", "phy-ct1")

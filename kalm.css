@@ -3,9 +3,9 @@
   font-size: clamp(0em,6.6vw,2rem);
 }
 table, .input{
-  margin: auto;
   font: clamp(0em,6.6vw,2rem) Consolas, monospace;
 }
+
 h6{
   text-align: center;
 }

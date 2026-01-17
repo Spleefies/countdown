@@ -29,5 +29,5 @@ function countdown(date, id) {
         }
     }, 16.67)
 }
-countdown("Jan 21, 2026 09:15:00", "bio-enzyme-quiz")
+countdown("Jan 28, 2026 09:15:00", "bio-enzyme-quiz")
 countdown("Mar 5, 2026 08:00:00", "phy-ct1")

@@ -1,41 +1,11 @@
-body {
-  background-color: light-dark(#fff,#000);
-  color: light-dark(#000,#fff);
-  font: clamp(0em,6vw,2rem) Consolas, monospace;
-  text-align: center;
-  overflow: hidden;
-}
-:root{color-scheme: light dark}
-table, tr, td{
-  border: 0.125rem solid;
-  border-collapse: collapse;
-  padding: 1vw; 
-}
-table{
-  margin: auto;
-  font: clamp(0em,6.6vw,2.5rem) Consolas, monospace;
-}
-a{
-  color:light-dark(#000,#fff);
-  font-weight:100;
-  font-size: 4.7vw;
-}
-.smalltext{
-  font-size: clamp(0em,5vw,2rem);
-}
 .input{
   float: right;
+  font-size: clamp(0em,6.6vw,2rem);
 }
-input[type="checkbox"]{
-  width: 3vw;
-  height: 3vw; 
+table, .input{
+  margin: auto;
+  font: clamp(0em,6.6vw,2rem) Consolas, monospace;
 }
-#confetti div {
-  width: 10px;
-  height: 20px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transition: all 0.4s;
-  transform: translate(0, 0)
+h6{
+  text-align: center;
 }

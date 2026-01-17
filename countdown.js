@@ -26,36 +26,8 @@ function countdown(date, id) {
             
             if (timeLeft < 0) {
                 clearInterval(x)
-                document.getElementById(id).textContent="HAPPY NEW YEAR!"
-            for (let i = 0; i < 100; i++) {
-                const x = (Math.random() - 0.5) * window.innerWidth
-                const y = (Math.random() - 0.5) * window.innerHeight
-                const rotate = Math.random() * 360
-                const rotatex = Math.random() * 360
-                const rotatey = Math.random() * 360
-            
-                const div = document.createElement('div')
-                div.style.setProperty("--x", x + "px")
-                div.style.setProperty("--y", y + "px")
-                div.style.setProperty("--r", rotate + "deg")
-                div.style.setProperty("--rx", rotatex + "deg")
-                div.style.setProperty("--ry", rotatey + "deg")
-                div.style.backgroundColor = `hsl(${Math.random() * 360},100%,50%)`
-                confetti.appendChild(div)
-            }
-            confetti.querySelectorAll("div").forEach(div => {
-                div.getBoundingClientRect()
-                requestAnimationFrame(() => {
-                    div.style.transform = `
-                    translate(var(--x),var(--y))
-                    rotate(var(--r))
-                    rotateX(var(--rx))
-                    rotateY(var(--ry))
-                    `
-                })
-            })
+                document.getElementById(id).parentElement.remove()
         }
     }, 16.67)
 }
-countdown("Jan 1, 2026 00:00:00", "2026")
-// countdown("Dec 31, 2025 16:16:16", "2026")
+countdown("Jan 21, 2026 09:15:00", "bio-enzyme-quiz")

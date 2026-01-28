@@ -5,7 +5,4 @@
 table, .input{
   font: clamp(0em,6.6vw,2rem) Consolas, monospace;
 }
-
-h6{
-  text-align: center;
-}
+h6 {text-align: center}

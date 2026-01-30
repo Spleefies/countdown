@@ -29,8 +29,8 @@ function countdown(date, id) {
         }
     }, 16.67)
 }
-countdown("Jan 30, 2026 10:15:00", "BL2131-enzyme-quiz")
-countdown("Feb 18, 2026 11:15:00", "GE2133-class-quiz")
+countdown("Feb 6, 2026 11:35:00", "MA2133-gt1")
+countdown("Feb 18, 2026 10:15:00", "GE2133-class-quiz")
 countdown("Feb 24, 2026 10:15:00", "CH2531-t1")
 countdown("Mar 10, 2026 10:00:00", "CH2531-compo1")
 countdown("Apr 7, 2026 10:00:00", "CH2531-compo2")

@@ -19,13 +19,13 @@ function countdown(date, id) {
             minutes + "m " +
             seconds + "s "
             
-            if (checkbox.checked == true) {
-                element.innerHTML += milliseconds + "ms"
-            }
+        if (checkbox.checked == true) {
+            element.innerHTML += milliseconds + "ms"
+        }
             
-            if (timeLeft < 0) {
-                clearInterval(x)
-                document.getElementById(id).parentElement.remove()
+        if (timeLeft < 0) {
+            clearInterval(x)
+            document.getElementById(id).parentElement.remove()
         }
     }, 16.67)
 }

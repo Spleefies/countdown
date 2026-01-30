@@ -1,7 +1,0 @@
-{
-    "scm.graph.badges": "all",
-    "github.showAvatar": true,
-    "scm.alwaysShowActions": true,
-    "scm.alwaysShowRepositories": true,
-    "scm.providerCountBadge": "visible"
-}

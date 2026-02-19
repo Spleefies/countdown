@@ -5,4 +5,8 @@
 table, .input{
   font: clamp(0em,6.6vw,2rem) Consolas, monospace;
 }
+tr > td:nth-child(2){
+  min-width: 50%;
+  text-align: center;
+}
 h6 {text-align: center}

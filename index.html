@@ -1,48 +1,30 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.cyan.min.css">
-    <link rel="stylesheet" href="kalm.css">
-    <title>Countdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.cyan.min.css">
+  <title>Countdown</title>
+  <style>
+    h6 {text-align: center}
+    .flex {
+      display: flex;
+      margin: 10em auto;
+      justify-content: space-around;
+    }
+    a[role=button] {
+      width: 21ch;
+      padding: 1em;
+      font-size: xx-large;
+    }
+  </style>
 </head>
 <body>
-    <label class="input">
-        <input type="checkbox">Show milliseconds
-    </label>
-    <table>
-        <tr>
-            <td>GE2133 Class Quiz</td>
-            <td id="GE2133-class-quiz"></td>
-        </tr>
-        <tr>
-            <td>CH2531 测试</td>
-            <td id="CH2531-t1"></td>
-        </tr>
-        <tr>
-            <td>CH2531 记叙文 1</td>
-            <td id="CH2531-compo1"></td>
-        </tr>
-        <tr>
-            <td>CH2531 记叙文 2</td>
-            <td id="CH2531-compo2"></td>
-        </tr>
-        <tr>
-            <td>CH2531 实用文</td>
-            <td id="CH2531-email"></td>
-        </tr>
-        <tr>
-            <td>CH2531 测验</td>
-            <td id="CH2531-t2"></td>
-        </tr>
-        <tr>
-            <td>BL2131 Practical Test</td>
-            <td id="BL2131-practical"></td>
-        </tr>
-    </table>
-    <footer>
-        <h6>v2026.2.0</h6>
-    </footer>
-    <script src="countdown.js"></script>
+  <div class="flex">
+    <a role="button" href="ct.html">Common Test</a>
+    <a role="button" href="other.html">Others</a>
+  </div>
+  <footer>
+    <h6>v2026.2.1</h6>
+  </footer>
 </body>
 </html>

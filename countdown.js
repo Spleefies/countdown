@@ -13,23 +13,25 @@ function countdown(date, id) {
         const seconds = Math.floor((timeLeft % 60000) / 1000)
         const milliseconds = (timeLeft % 1000)
         
+        if (!element) return
+
         element.innerHTML =
             days + "d " +
             hours + "h " +
             minutes + "m " +
             seconds + "s "
             
-        if (checkbox.checked == true) {
+        if (checkbox.checked) {
             element.innerHTML += milliseconds + "ms"
         }
             
         if (timeLeft < 0) {
             clearInterval(x)
-            document.getElementById(id).parentElement.remove()
+            element.parentElement.remove()
         }
     }, 16.67)
 }
-countdown("Feb 25, 2026 10:15:00", "GE2133-class-quiz")
+countdown("Feb 25, 2026 10:45:00", "GE2133-class-quiz")
 countdown("Feb 27 2026 13:00:00", "MA2133-gt2")
 countdown("Mar 10, 2026 10:00:00", "CH2531-compo1")
 countdown("Apr 7, 2026 10:00:00", "CH2531-compo2")

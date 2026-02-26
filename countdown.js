@@ -16,13 +16,13 @@ function countdown(date, id) {
         if (!element) return
 
         element.innerHTML =
-            days + "d " +
-            hours + "h " +
-            minutes + "m " +
-            seconds + "s "
+            (days == 0 ? '' : `${days}d `) +
+            (hours == 0 ? '' : `${hours}h `) +
+            (minutes == 0 ? '' : `${minutes}m `) +
+            (seconds == 0 ? '' : `${seconds}s `)
             
         if (checkbox.checked) {
-            element.innerHTML += milliseconds + "ms"
+            element.innerHTML += " " + milliseconds + "ms"
         }
             
         if (timeLeft < 0) {
@@ -31,7 +31,6 @@ function countdown(date, id) {
         }
     }, 16.67)
 }
-countdown("Feb 26, 2026 10:45:00", "HU2131-assesment")
 countdown("Feb 27 2026 13:00:00", "MA2133-gt2")
 countdown("Mar 10, 2026 10:00:00", "CH2531-compo1")
 countdown("Apr 7, 2026 10:00:00", "CH2531-compo2")

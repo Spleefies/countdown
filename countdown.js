@@ -13,16 +13,21 @@ function countdown(date, id) {
         const seconds = Math.floor((timeLeft % 60000) / 1000)
         const milliseconds = (timeLeft % 1000)
         
+        const notdisplayDays = days == 0
+        const notdisplayHours = notdisplayDays && hours == 0
+        const notdisplayMinutes = notdisplayHours && minutes == 0
+        const notdisplaySeconds = notdisplayMinutes && seconds == 0
+
         if (!element) return
 
         element.innerHTML =
-            (days == 0 ? '' : `${days}d `) +
-            (hours == 0 ? '' : `${hours}h `) +
-            (minutes == 0 ? '' : `${minutes}m `) +
-            (seconds == 0 ? '' : `${seconds}s `)
+            (notdisplayDays ?'' : `${days}d `) +
+            (notdisplayHours ? '' : `${hours}h `) +
+            (notdisplayMinutes ? '' : `${minutes}m `) +
+            (notdisplaySeconds ? '' : `${seconds}s `)
             
         if (checkbox.checked) {
-            element.innerHTML += " " + milliseconds + "ms"
+            element.innerHTML += `${milliseconds}ms`.padStart(5, ' ')
         }
             
         if (timeLeft < 0) {
@@ -31,8 +36,8 @@ function countdown(date, id) {
         }
     }, 16.67)
 }
-countdown("Feb 27 2026 13:00:00", "MA2133-gt2")
 countdown("Mar 10, 2026 10:00:00", "CH2531-compo1")
+countdown("Mar 12, 2026 15:45:00", "CS2241-lt1")
 countdown("Apr 7, 2026 10:00:00", "CH2531-compo2")
 countdown("Apr 21, 2026 10:00:00", "CH2531-email")
 countdown("May 5, 2026 10:15:00", "CH2531-t2")

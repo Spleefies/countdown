@@ -10,3 +10,11 @@ tr > td:nth-child(2){
   text-align: center;
 }
 h6 {text-align: center}
+a {
+  text-decoration: none;
+  text-align: center;
+  margin-left: 50%;
+}
+svg {
+  transform: translateY(-2px);
+}

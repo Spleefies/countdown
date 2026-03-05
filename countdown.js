@@ -27,7 +27,7 @@ function countdown(date, id) {
             (notdisplaySeconds ? '' : `${seconds}s `)
             
         if (checkbox.checked) {
-            element.innerHTML += `${milliseconds}ms`.padStart(5, ' ')
+            element.innerHTML += `${milliseconds}ms`.padStart(5, 0)
         }
             
         if (timeLeft < 0) {
@@ -39,12 +39,11 @@ function countdown(date, id) {
 countdown("Mar 10, 2026 10:00:00", "CH2531-compo1")
 countdown("Mar 12, 2026 15:45:00", "CS2241-lt1")
 countdown("Apr 7, 2026 10:00:00", "CH2531-compo2")
+countdown("Apr 8, 2026 12:00:00", "GE2133-gt")
 countdown("Apr 21, 2026 10:00:00", "CH2531-email")
 countdown("May 5, 2026 10:15:00", "CH2531-t2")
 countdown("May 8, 2026 10:15:00", "BL2131-practical")
 //c
-countdown("Mar 5, 2026 13:00:00", "PC2131-ct")
-countdown("Mar 5, 2026 15:00:00", "BL2131-ct")
 countdown("Apr 27, 2026 08:30:00", "EL2131-ct2")
 countdown("Apr 27, 2026 10:30:00", "CM2131-ct")
 countdown("Apr 30, 2026 08:30:00", "MA2133-ct2")

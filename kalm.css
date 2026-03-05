@@ -13,7 +13,7 @@ h6 {text-align: center}
 a {
   text-decoration: none;
   text-align: center;
-  margin-left: calc(50% - 24px - 4ch);
+  display: block;
 }
 svg {
   transform: translateY(-2px);

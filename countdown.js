@@ -36,8 +36,6 @@ function countdown(date, id) {
         }
     }, 16.67)
 }
-countdown("Mar 10, 2026 10:00:00", "CH2531-compo1")
-countdown("Mar 12, 2026 15:45:00", "CS2241-lt1")
 countdown("Apr 7, 2026 10:00:00", "CH2531-compo2")
 countdown("Apr 8, 2026 12:00:00", "GE2133-gt")
 countdown("Apr 21, 2026 10:00:00", "CH2531-email")

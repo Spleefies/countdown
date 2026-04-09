@@ -37,8 +37,8 @@ function countdown(date, id) {
     }, 16.67)
 }
 countdown("Apr 7, 2026 10:00:00", "CH2531-compo2")
-countdown("Apr 8, 2026 11:15:00", "GE2133-gt")
 countdown("Apr 14, 2026 12:15:00", "MA2133-gt3")
+countdown("Apr 16, 2026 13:45:00", "CM2131-practical")
 countdown("Apr 21, 2026 10:00:00", "CH2531-email")
 countdown("May 5, 2026 10:15:00", "CH2531-t2")
 countdown("May 8, 2026 10:15:00", "BL2131-practical")

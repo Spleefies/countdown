@@ -36,4 +36,4 @@ function countdown(date, id) {
         }
     }, 16.67)
 }
-countdown("May 12, 2026 11:15:00", "EL2131-p1")
+countdown("May 14, 2026 08:15:00", "EL2131-p1")

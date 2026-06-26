@@ -24,3 +24,9 @@ a {
 svg {
   transform: translateY(-2px);
 }
+details > div {
+  font-size: 0.7em;
+}
+details {
+  margin-bottom: 0;
+}

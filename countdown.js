@@ -1,3 +1,5 @@
+import 'https://cdn.jsdelivr.net/npm/hash-wasm@4/dist/xxhash3.umd.min.js'
+
 const checkbox = document.querySelector("input")
 function countdown(date, id) {
     const element = document.getElementById(id)
@@ -7,22 +9,22 @@ function countdown(date, id) {
         const now = new Date().getTime()
         const timeLeft = targetDate - now
         
-        const days = Math.floor(timeLeft / 86400000)
-        const hours = Math.floor((timeLeft % 86400000) / 3600000)
-        const minutes = Math.floor((timeLeft % 3600000) / 60000)
-        const seconds = Math.floor((timeLeft % 60000) / 1000)
+        const days         = Math.floor( timeLeft / 86400000)
+        const hours        = Math.floor((timeLeft % 86400000) / 3600000)
+        const minutes      = Math.floor((timeLeft % 3600000) / 60000)
+        const seconds      = Math.floor((timeLeft % 60000) / 1000)
         const milliseconds = (timeLeft % 1000)
         
-        const notdisplayDays = days == 0
-        const notdisplayHours = notdisplayDays && hours == 0
-        const notdisplayMinutes = notdisplayHours && minutes == 0
+        const notdisplayDays    = days == 0
+        const notdisplayHours   = notdisplayDays    && hours   == 0
+        const notdisplayMinutes = notdisplayHours   && minutes == 0
         const notdisplaySeconds = notdisplayMinutes && seconds == 0
 
         if (!element) return
 
         element.innerHTML =
-            (notdisplayDays ?'' : `${days}d `) +
-            (notdisplayHours ? '' : `${hours}h `) +
+            (notdisplayDays    ? '' : `${days}d `   ) +
+            (notdisplayHours   ? '' : `${hours}h `  ) +
             (notdisplayMinutes ? '' : `${minutes}m `) +
             (notdisplaySeconds ? '' : `${seconds}s `)
             
@@ -36,4 +38,49 @@ function countdown(date, id) {
         }
     }, 16.67)
 }
-countdown("May 14, 2026 08:15:00", "EL2131-p1")
+const exams = [
+    {
+        name: "Physics Common Test",
+        course: "PC2131",
+        location: "Classrooms",
+        time: "August 24, 2026 08:00:00",
+    },
+    {
+        name: "English Common Test",
+        course: "EL2131",
+        location: "Lower Auditorium",
+        time: "August 24, 2026 10:00:00",
+    },
+    {
+        name: "Chemistry Common Test",
+        course: "CM2131",
+        location: "Hall",
+        time: "August 26, 2026 14:00:00",
+    },
+    {
+        name: "Biology Common Test",
+        course: "BL2131",
+        location: "Auditorium",
+        time: "August 26, 2026 16:00:00",
+    }
+]
+const examTable = document.getElementById('exam')
+
+exams.forEach(async (exam) => {
+    const examRow = document.createElement('tr')
+    const id = await hashwasm.xxhash3(JSON.stringify(exam))
+    examRow.innerHTML = /*html*/`
+    <td>
+        <details>
+            <summary>${exam.name}</summary>
+            <div>
+                Course: ${exam.course}<br>
+                Location: ${exam.location}
+            </div>
+        </details>
+    </td>
+    <td id='${id}'>${exam.time}</td>
+    `
+    examTable.append(examRow)
+    countdown(exam.time, id)
+})

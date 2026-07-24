@@ -40,10 +40,10 @@ function countdown(date, id) {
 }
 const exams = [
     {
-        name: "Math Graded Task 5",
+        name: "Math Graded Task 6",
         course: "MA2133",
         location: "Classroom",
-        time: "July 13, 2026 14:15:00"
+        time: "August 3, 2026 14:15:00"
     },
     {
         name: "Physics Common Test",
@@ -68,6 +68,18 @@ const exams = [
         course: "BL2131",
         location: "Auditorium",
         time: "August 26, 2026 16:00:00",
+    },
+    {
+        name: "Math Graded Task 7",
+        course: "MA2133",
+        location: "Classroom",
+        time: "August 31, 2026 14:15:00"
+    },
+    {
+        name: "Math Graded Task 8",
+        course: "MA2133",
+        location: "Classroom",
+        time: "Sep 29, 2026 12:15:00"
     }
 ]
 const examTable = document.getElementById('exam')

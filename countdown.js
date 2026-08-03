@@ -60,7 +60,7 @@ const exams = [
     {
         name: "Chemistry Common Test",
         course: "CM2131",
-        location: "Hall",
+        location: "Lower Auditorium",
         time: "August 26, 2026 14:00:00",
     },
     {

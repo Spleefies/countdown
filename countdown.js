@@ -40,10 +40,10 @@ function countdown(date, id) {
 }
 const exams = [
     {
-        name: "Math Graded Task 6",
-        course: "MA2133",
+        name: "测试",
+        course: "CH2531",
         location: "Classroom",
-        time: "August 3, 2026 14:15:00"
+        time: "August 18, 2026 10:15:00"
     },
     {
         name: "Physics Common Test",

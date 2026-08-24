@@ -40,24 +40,6 @@ function countdown(date, id) {
 }
 const exams = [
     {
-        name: "测试",
-        course: "CH2531",
-        location: "Classroom",
-        time: "August 18, 2026 10:15:00"
-    },
-    {
-        name: "Physics Common Test",
-        course: "PC2131",
-        location: "Classroom",
-        time: "August 24, 2026 08:00:00",
-    },
-    {
-        name: "English Common Test",
-        course: "EL2131",
-        location: "Lower Auditorium",
-        time: "August 24, 2026 10:00:00",
-    },
-    {
         name: "Chemistry Common Test",
         course: "CM2131",
         location: "Lower Auditorium",
@@ -74,6 +56,24 @@ const exams = [
         course: "MA2133",
         location: "Classroom",
         time: "August 31, 2026 14:15:00"
+    },
+    {
+        name: "Geography Class Test",
+        course: "GE2133",
+        location: null,
+        time: "Sep 16, 2026 11:15:00"
+    },
+    {
+        name: "Biology Olympiad Test",
+        course: "BL2233",
+        location: null,
+        time: "Sep 17, 2026 16:30:00"
+    },
+    {
+        name: "作文",
+        course: "CH2531",
+        location: "Classroom",
+        time: "Sep 29, 2026 10:00:00"
     },
     {
         name: "Math Graded Task 8",
@@ -93,7 +93,7 @@ exams.forEach(async (exam) => {
             <summary>${exam.name}</summary>
             <div>
                 Course: ${exam.course}<br>
-                Location: ${exam.location}
+                ${exam.location ? `Location: ${exam.location}` : ''}
             </div>
         </details>
     </td>

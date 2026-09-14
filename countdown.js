@@ -52,16 +52,16 @@ const exams = [
         time: "Sep 16, 2026 11:15:00"
     },
     {
-        name: "Chemistry Practical Test",
-        course: "CM2131",
-        location: "Chem Lab",
-        time: "Sep 18, 2026 10:15:00"
-    },
-    {
         name: "Biology Olympiad Test",
         course: "BL2233",
         location: "Classroom",
         time: "Sep 17, 2026 16:30:00"
+    },
+    {
+        name: "Chemistry Practical Test",
+        course: "CM2131",
+        location: "Chem Lab",
+        time: "Sep 18, 2026 10:15:00"
     },
     {
         name: "作文",

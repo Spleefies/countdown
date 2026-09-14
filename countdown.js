@@ -83,7 +83,7 @@ const exams = [
     },
     {
         name: "MT EOY",
-        course: "CH2531 / CL2531 / CL2232 / MH2531 / TH2531",
+        course: "CH2531/CL2531/CL2332/MH2531/TH2531",
         location: "Hall",
         time: "October 14, 2026 14:00:00"
     },

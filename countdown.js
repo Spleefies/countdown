@@ -40,18 +40,6 @@ function countdown(date, id) {
 }
 const exams = [
     {
-        name: "Chemistry Common Test",
-        course: "CM2131",
-        location: "Lower Auditorium",
-        time: "August 26, 2026 14:00:00",
-    },
-    {
-        name: "Biology Common Test",
-        course: "BL2131",
-        location: "Auditorium",
-        time: "August 26, 2026 16:00:00",
-    },
-    {
         name: "Math Graded Task 7",
         course: "MA2133",
         location: "Classroom",
@@ -64,9 +52,15 @@ const exams = [
         time: "Sep 16, 2026 11:15:00"
     },
     {
+        name: "Chemistry Practical Test",
+        course: "CM2131",
+        location: "Chem Lab",
+        time: "Sep 18, 2026 10:15:00"
+    },
+    {
         name: "Biology Olympiad Test",
         course: "BL2233",
-        location: null,
+        location: "Classroom",
         time: "Sep 17, 2026 16:30:00"
     },
     {
@@ -80,7 +74,55 @@ const exams = [
         course: "MA2133",
         location: "Classroom",
         time: "Sep 29, 2026 12:15:00"
-    }
+    },
+    {
+        name: "English EOY",
+        course: "EL2131",
+        location: "Hall",
+        time: "October 13, 2026 14:00:00"
+    },
+    {
+        name: "MT EOY",
+        course: "CH2531 / CL2531 / CL2232 / MH2531 / TH2531",
+        location: "Hall",
+        time: "October 14, 2026 14:00:00"
+    },
+    {
+        name: "HAMS EOY",
+        course: "EN2131 / GE2133 / HY2133",
+        location: "Hall",
+        time: "October 20, 2026 08:00:00"
+    },
+    {
+        name: "Biology EOY",
+        course: "BL2131",
+        location: "Hall",
+        time: "October 21, 2026 08:00:00"
+    },
+    {
+        name: "Chemistry EOY",
+        course: "CM2131",
+        location: "E1-13/14/15/16, E2-10/11",
+        time: "October 22, 2026 14:00:00"
+    },
+    {
+        name: "Physics EOY",
+        course: "PC2131",
+        location: "Hall",
+        time: "October 23, 2026 14:30:00"
+    },
+    {
+        name: "Math EOY",
+        course: "MA2133",
+        location: "Hall",
+        time: "October 26, 2026 08:00:00"
+    },
+    {
+        name: "3rd Language EOY",
+        course: "CL2232 / ML2232",
+        location: "E1-13/14",
+        time: "October 29, 2026 08:00:00"
+    },
 ]
 const examTable = document.getElementById('exam')
 

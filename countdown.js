@@ -40,42 +40,6 @@ function countdown(date, id) {
 }
 const exams = [
     {
-        name: "Math Graded Task 7",
-        course: "MA2133",
-        location: "Classroom",
-        time: "August 31, 2026 14:15:00"
-    },
-    {
-        name: "Geography Class Test",
-        course: "GE2133",
-        location: null,
-        time: "Sep 16, 2026 11:15:00"
-    },
-    {
-        name: "Biology Olympiad Test",
-        course: "BL2233",
-        location: "Classroom",
-        time: "Sep 17, 2026 16:30:00"
-    },
-    {
-        name: "Chemistry Practical Test",
-        course: "CM2131",
-        location: "Chem Lab",
-        time: "Sep 18, 2026 10:15:00"
-    },
-    {
-        name: "作文",
-        course: "CH2531",
-        location: "Classroom",
-        time: "Sep 29, 2026 10:00:00"
-    },
-    {
-        name: "Math Graded Task 8",
-        course: "MA2133",
-        location: "Classroom",
-        time: "Sep 29, 2026 12:15:00"
-    },
-    {
         name: "English EOY",
         course: "EL2131",
         location: "Hall",
@@ -88,8 +52,20 @@ const exams = [
         time: "October 14, 2026 14:00:00"
     },
     {
-        name: "HAMS EOY",
-        course: "EN2131 / GE2133 / HY2133",
+        name: "Geography EOY",
+        course: "GE2133",
+        location: "Hall",
+        time: "October 20, 2026 08:00:00"
+    },
+    {
+        name: "History EOY",
+        course: "HY2133",
+        location: "Hall",
+        time: "October 20, 2026 08:00:00"
+    },
+    {
+        name: "English Literature EOY",
+        course: "EN2131",
         location: "Hall",
         time: "October 20, 2026 08:00:00"
     },

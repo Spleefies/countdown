@@ -113,7 +113,7 @@ const exams = [
     },
     {
         name: "Math EOY",
-        course: "MA2133",
+        course: "MA2133 / MA3133",
         location: "Hall",
         time: "October 26, 2026 08:00:00"
     },

@@ -40,6 +40,30 @@ function countdown(date, id) {
 }
 const exams = [
     {
+        name: "CS Lab Test 2",
+        course: "CS2241",
+        location: "Computer Lab 2",
+        time: "October 8, 2026 16:30:00"
+    },
+    {
+        name: "Chemistry Olympiad Test 2",
+        course: "CM2231",
+        location: "D4-06",
+        time: "October 8, 2026 16:30:00"
+    },
+    {
+        name: "Physics Olympiad Test 2",
+        course: "PC2231",
+        location: "D4-17",
+        time: "October 8, 2026 16:30:00"
+    },
+    {
+        name: "English EOY",
+        course: "EL2131",
+        location: "Hall",
+        time: "October 13, 2026 14:00:00"
+    },
+    {
         name: "English EOY",
         course: "EL2131",
         location: "Hall",

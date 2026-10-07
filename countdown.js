@@ -64,12 +64,6 @@ const exams = [
         time: "October 13, 2026 14:00:00"
     },
     {
-        name: "English EOY",
-        course: "EL2131",
-        location: "Hall",
-        time: "October 13, 2026 14:00:00"
-    },
-    {
         name: "MT EOY",
         course: "CH2531/CL2531/CL2332/MH2531/TH2531",
         location: "Hall",
